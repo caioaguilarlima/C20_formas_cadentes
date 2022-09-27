@@ -10,6 +10,11 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
+	ground =new Ground(200,390,400,20);
+	right = new Ground(390,200,20,400);
+	left = new Ground(10,200,20,400);
+	top_wall = new Ground(200,10,400,20);
+
 	var ballOptions = {
 		restitution: 0.5,
 		friction: 0.02,
